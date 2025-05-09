@@ -1,0 +1,51 @@
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+/* === Headline (h1) === */
+.hero-text-container h1 {
+    font-family: 'MarignyBlack', sans-serif;
+    font-weight: 900;
+    font-size: 1.1875rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  
+  .headline-line {
+    display: block;
+  }
+  
+  /* Zvýraznená časť nadpisu */
+  .hero-text-container h1 .highlight {
+    font-size: 1.9375rem;
+    color: #fd5e02;
+    font-family: 'MarignyBlack', sans-serif;
+    font-weight: 900;
+  }
+  
+  /* === Subheadline (h2) === */
+  .hero-text-container h2 {
+    font-family: 'OmnesMedium', sans-serif;
+    font-weight: 500;
+    font-size: 1.1875rem;
+    color: #707070;
+    text-align: center;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+  
+  .subheadline-line {
+    display: block;
+  }
+  
+  /* Zvýraznené slová v podnadpise */
+  .hero-text-container h2 .subhighlight {
+    color: #faac18;
+    font-weight: 500;
+  }

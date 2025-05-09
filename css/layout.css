@@ -1,0 +1,28 @@
+/* === Mobile Version === */
+
+.header-container {
+    outline: 2px dashed yellow; /* debug temporary lines */
+    display: flex;
+    width: 100%;
+    max-width: clamp(360px, 100vw, 1280px);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem auto;
+    padding: 0 0.5rem;
+}
+
+.hero-container {
+    outline: 2px dashed yellow; /* debug temporary lines */
+    display: flex;
+    max-width: clamp(360px, 100vw, 1280px);
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+/* === Desktop Version === */
+@media (min-width: 1279px) {
+    .header-container {
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+}

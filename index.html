@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WeTheHandPlayers</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <!-- Debug Lines -->
+        <div class="debug-mobile-line"></div> <!-- debug temporary -->
+        <div class="debug-tablet-port-line"></div> <!-- debug temporary -->
+        <div class="debug-tablet-land-line"></div> <!-- debug temporary -->
+        <div class="debug-desktop-line"></div> <!-- debug temporary -->
+        <div class="debug-max-line"></div> <!-- debug temporary --> 
+        <!-- WebCode Start -->
+        <!-- Navigation Bar -->
+        <header class="header-container">
+            <div class="navigation-container">
+                <button
+                    class="close-btn"
+                    id="closeMenu" 
+                    aria-label="Close menu"
+                    aria-expanded="false"
+                    aria-controls="navPopupMenu">
+                    <svg class="icon-close-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.43 24.43">
+                        <path d="M14.94,12.22l8.93-8.93A1.93,1.93,0,1,0,21.14.56L12.22,9.49,3.29.56A1.93,1.93,0,0,0,.56,3.29l8.93,8.93L.56,21.14a1.93,1.93,0,1,0,2.73,2.73l8.93-8.93,8.92,8.93a1.93,1.93,0,1,0,2.73-2.73Z" fill="currentColor"/>
+                    </svg>
+                </button>                
+                <nav class="navigation" aria-label="Main Navigation">
+                    <a href="/" class="logo-navigation">
+                        <img src="assets/images/logo-navigation.svg" alt="WeTheHandPlayers Homepage">
+                    </a>
+                    <ul class="navigation-menu" id="navPopupMenu">
+                        <li><a href="#" class="nav-menu-items">
+                            <svg class="nav-menu-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 23.61">
+                                <path d="M30.25,0H9.75C4.37,0,0,5.29,0,11.81s4.37,11.8,9.75,11.8a9.22,9.22,0,0,0,7.62-4.45h5.26a9.22,9.22,0,0,0,7.62,4.45c5.38,0,9.75-5.28,9.75-11.8S35.63,0,30.25,0ZM13,12.56H10.5v2.5a.76.76,0,0,1-.75.75h0A.76.76,0,0,1,9,15.06v-2.5H6.5a.75.75,0,0,1,0-1.5H9V8.56a.75.75,0,0,1,.75-.75h0a.75.75,0,0,1,.75.75v2.5H13a.75.75,0,0,1,0,1.5Zm13.78.75a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,26.78,13.31Zm3.47,3.46a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,30.25,16.77Zm0-6.93a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,30.25,9.84Zm3.47,3.47a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,33.72,13.31Z" fill="currentColor"/>
+                            </svg>Games</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-header-container">
+                    <a href="https://twitter.com/wthp_studio" class="social-icons-header" aria-label="Visit our X (Twitter) profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-x"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/wthp.studio/" class="social-icons-header" aria-label="Visit our Instagram profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://discord.gg/j9NSRFs9YQ" class="social-icons-header" aria-label="Visit our Discord profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-discord"></use>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/wthp_studio" class="social-icons-header" aria-label="Visit our Telegram profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-telegram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@wthp.studio" class="social-icons-header" aria-label="Visit our TikTok profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-tiktok"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCF8L3X00yAMF8pioWSoGUmg" class="social-icons-header" aria-label="Visit our Youtube profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="burger-btn"
+                id="btn-burger"
+                aria-label="Toggle menu"
+                aria-expanded="false"
+                aria-controls="navPopupMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        <main>
+            <!-- Hero Section -->
+            <section class="hero" aria-label="Hero section">
+                <div class="hero-container">
+                    <div class="hero-text-container">
+                        <h1 class="hero-headline">
+                            <span class="headline-line">WHETHER YOU LIE, SIT, OR STAND</span>
+                            <span class="headline-line highlight">TAKE IT IN YOUR HAND!</span>
+                          </h1>
+                        <h2 class="subheadline">
+                            <span class="subheadline-line">In a market flooded with repetition,</span>
+                            <span class="subheadline-line">we craft <span class="subhighlight">original games</span> &mdash;</span>
+                            <span class="subheadline-line">authentic experiences built <span class="subhighlight">for anyone, anywhere.</span></span>
+                        </h2>
+                    </div>
+                </div>
+            </section>            
+        </main>
+        <!-- Scripts -->
+        <script src="js/main.js" defer></script>
+        <script>
+            fetch('assets/images/icons/sprite.svg?v=1.0') // ← verzia
+              .then(response => response.text())
+              .then(data => {
+                const div = document.createElement('div');
+                div.style.display = 'none';
+                div.innerHTML = data;
+                document.body.insertBefore(div, document.body.firstChild);
+            });
+        </script>        
+    </body>
+</html>
