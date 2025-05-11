@@ -1,0 +1,199 @@
+/* === Hero Text === */
+
+.hero-text-container {
+    outline: 2px dashed blue; /* debug temporary lines */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+    /*white-space: nowrap;*/
+}
+
+/* === Hero Seedsale === */
+
+.hero-seedsale-container {
+    outline: 2px dashed orangered; /* debug temporary lines */
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+/* preriesit column atd, kde je to potrebne a kde nie*/
+
+
+.seedsale-box-container {
+    outline: 2px dashed #0ee0e0; /* debug temporary lines */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+
+/* Seedsale Box Layout */
+
+.seedsale-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.token-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.ticker-chain-container {
+    display: flex;
+    gap: 4.5rem;
+    /*margin-bottom: 1.5rem;*/
+}
+
+.token-info-ticker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.token-info-chain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.token-info-value {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.chain-icon {
+    width: 26px;
+    height: 26px;
+    color: #000000;
+}
+
+.contract-address {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    /* je toto cele nutne ?*/
+}
+
+
+
+
+
+
+
+
+.calltoaction-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  background-color: rgb(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+
+.separator {
+    margin: 0 0.3rem;
+    color: #605b58;
+    font-weight: bold;
+    /* pridat font?*/
+}
+
+
+
+
+
+
+
+
+/* === Seedsale Info === */
+/* Seedsale Title */
+.seedsale-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+.badge-live {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(16, 122, 24, 0.5);
+    border-radius: 9999px;
+    padding: 0.5em 0.7em;    
+    gap: 0.5rem;
+}
+
+.badge-live::before {
+    display: inline-block;
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #16f216;
+}
+
+
+
+
+.progress-bar {
+  height: 24px;
+  width: 100%;
+  background-color: #605b58;
+  border-radius: 999px;
+  align-self: center;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 80%;
+  background-color: #fd5e02;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 2.5px;
+  border-radius: 999px;  
+}
+
+.progress-labels {
+  font-size: 1rem;
+  font-family: 'OmnesMedium', sans-serif;
+  color: #605b58;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0.15rem;
+  margin-bottom: 0.5rem;
+}
