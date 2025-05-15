@@ -1,0 +1,90 @@
+/* === Seedsale Box === */
+
+/* Seedsale Info */
+
+.seedsale-text {
+    font-size: 1.8rem;
+    font-family: 'OmnesBold', sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.badge-live {
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #16f216;
+}
+
+.actual-price1 {
+    font-size: 1.1rem;
+    font-family: 'OmnesMedium', sans-serif;
+    font-weight: 500;
+    color: #605b58;
+}
+
+.actual-price2 {
+    font-size: 1.1rem;
+    font-family: 'MarignyBold', sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.raised1 {
+    font-size: 1.18rem;
+    font-family: 'OmnesSemiBold', sans-serif;
+    font-weight: 600;
+    color: #605b58;
+}
+
+.raised2 {
+    font-size: 1.18rem;
+    font-family: 'MarignyBlack', sans-serif;
+    font-weight: 900;
+    color: #000000;
+}
+
+/* Token Info */
+
+.token-info-label {
+    font-size: 1.13rem;
+    font-family: 'OmnesMedium', sans-serif;
+    font-weight: 500;
+    color: #605b58;
+}
+
+.token-info-value {
+    font-size: 1.5rem;
+    font-family: 'OmnesBold', sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.contract-label {
+    font-size: 1.13rem;
+    font-family: 'OmnesMedium', sans-serif;
+    font-weight: 500;
+    color: #605b58;
+    display: block; /*naco*/
+}
+
+.contract-value {
+    font-size: 1.1rem;
+    font-family: 'OmnesSemiBold', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    /*word-break: break-all; /* aby sa pekne zalamovalo na menších obrazovkách */
+}
+
+/* CallToAction Info */
+
+.calltoaction-headline {
+    color: #000000;
+}
+
+.vesting-info {
+    font-size: 0.9rem;
+    font-family: 'OmnesSemiBold', sans-serif;
+    font-weight: 700;
+    color: #ffffff; /* zmenit na bielu */
+}
