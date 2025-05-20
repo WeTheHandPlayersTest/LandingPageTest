@@ -1,0 +1,6 @@
+/* === Social Icons Header - Desktop === */
+.social-icon  {
+    width: 50%; /* SVG bude dynamicky škálovať vo vnútri kruhu */
+    height: 50%;  /* share circle/icon */
+    color: #ffffff;
+}

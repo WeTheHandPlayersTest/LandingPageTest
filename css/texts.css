@@ -1,0 +1,107 @@
+/* === Headline (h1) === */
+.headline-line {
+    /*font-size: 1.03125rem;*/
+    font-size: clamp(1.03125rem, 4.5vw, 1.3125rem);
+    font-family: 'MarignyBlack', sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+}
+  
+.headline-line {
+    display: block;
+}
+
+/* Zvýraznená časť nadpisu */
+.headline-line2 {
+    /*font-size: 1.625rem;*/
+    font-size: clamp(1.625rem, 7vw, 2.0625rem);
+    font-family: 'MarignyBlack', sans-serif;
+    font-weight: 900;
+    color: #fd5e02;
+}
+
+/* === Subheadline (h2) === */
+.subheadline {
+    font-size: 0.9375rem;
+    font-family: 'OmnesMedium', sans-serif;
+    font-weight: 500;
+    color: #707070;
+    line-height: 1.4;
+    margin: 0.8rem 0 2rem 0;
+    white-space: nowrap;
+}
+
+.subheadline-line {
+    display: block;
+}
+
+/* Zvýraznené slová v podnadpise */
+.hero-text-container h2 .subhighlight {
+    color: #faac18;
+}
+
+/* === Mobile Large === */
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .headline-line {
+        /*font-size: 1.3125rem;*/
+        font-size: clamp(1.3125rem, 4.5vw, 1.78125rem);
+    }
+
+    .headline-line2 {
+        /*font-size: 2.0625rem;*/
+        font-size: clamp(2.0625rem, 7vw, 2.75rem);
+    }
+
+    .subheadline {
+        font-size: 1.25rem;
+    }
+}
+
+/* === Tablet Portrait === */
+@media (min-width: 768px) {
+
+    .headline-line {
+        font-size: 1.78125rem;
+    }
+
+    .headline-line2 {
+        font-size: 2.75rem;
+    }
+
+    .subheadline {
+        font-size: 1.5625rem;
+    }
+}
+
+/* === Desktop === */
+@media (min-width: 1280px) {
+
+    .headline-line {
+        font-size: 1.875rem;
+    }
+
+    .headline-line2 {
+        font-size: 3rem;
+    }
+
+    .subheadline {
+        font-size: 1.6875rem;
+    }
+}
+
+/* === Desktop Large === */
+@media (min-width: 1440px) {
+
+    .headline-line {
+        font-size: 2.125rem;
+    }
+
+    .headline-line2 {
+        font-size: 3.4375rem;
+    }
+
+    .subheadline {
+        font-size: 1.9375rem;
+    }
+}
