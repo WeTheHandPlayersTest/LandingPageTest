@@ -1,0 +1,217 @@
+/* === Navigation Logo - same for mobile and desktop === */
+.logo-navigation {
+    display: flex;
+    height: 5rem;
+    width: auto;
+    min-width: 219px;
+    flex-shrink: 0;
+}
+
+/* === Mobile Version === */
+
+/* === Turn Off (Desktop Elements) === */
+
+.close-btn {
+    display: none;
+}
+
+.social-icons-header {
+    display: none;
+}
+
+.navigation-menu-desktop {
+    display: none;
+}
+
+/* === Mobile popupMenu Layout/Format/Styles === */
+
+.navigation-menu-mobile {
+    display: none;
+    width: clamp(340px, 90vw, 500px);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    z-index: 1000;
+    background-color: #092437;
+    border-radius: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    padding: 2rem;
+}
+
+.navigation-menu-mobile.active {
+    display: flex;
+}
+
+.nav-menu-items-popup {
+    display: flex;
+    flex-direction: row; /*MUST BE*/
+    align-items: center;
+    font-size: 1.0625rem;
+    font-family: 'MarignyBold', sans-serif;
+    white-space: nowrap;
+    font-weight: 700;
+    gap: 0.5rem; /* medzi ikonou a textom */
+}
+
+.icon-games-popup {
+    height: 2rem;
+    width: 1.8rem;
+}
+
+.icon-token-popup {
+    height: 2rem;
+    width: 1.8rem;
+}
+
+.icon-aboutus-popup {
+    height: 2.1rem;
+    width: 1.9rem;
+}
+
+.icon-whitepaper-popup {
+    height: 2.2rem;
+    width: 2em;
+}
+
+/* Social Icons v popupe */
+.social-in-popup {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /*gap: 0.6rem; /* Medzera medzi ikonami */
+    gap: clamp(0.6rem, 2.8vw, 1.5rem);
+    margin-top: 1rem; /* margin icon od obsahu */
+}
+
+.social-in-popup .social-icons-header {
+    width: 2.7rem;
+    height: 2.7rem;
+    /*border-radius: 50%;*/
+    border-radius: 2.5rem;
+    background-color: #1f3140;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+.social-icons-header:hover .social-icon {
+    color: #092437;
+}
+
+.social-in-popup .social-icons-header:hover {
+    background-color: #faac18;
+}
+
+/* === Desktop Version === */
+@media (min-width: 1280px) {
+
+    /* === Turn Off (Mobile Elements) === */
+    
+    .burger-btn {
+        display: none;
+    }
+    
+    .close-btn {
+        display: none !important;
+    }
+
+    /* === Desktop Menu Layout/Format/Styles === */
+    
+    .navigation-container {
+       /* outline: 2px dashed #0ee0e0; /* debug temporary lines*/
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navigation-menu-desktop {
+       /* outline: 2px dashed orangered; /* debug temporary lines */
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        padding: 0.75rem 2.5rem;
+        border-radius: 9999px;
+        background-color: #011e31;
+
+    }
+
+    .nav-menu-items-desktop {
+        display: flex;
+        font-size: 0.9375rem;
+        font-family: 'MarignyBold', sans-serif;
+        font-weight: 700;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+
+    .nav-menu-items-desktop svg {
+        fill: currentColor;
+    }
+
+    .nav-menu-items-desktop:hover {
+        color: #faac18;
+    }
+
+    .icon-games-desktop {
+        height: 2rem;
+        width: 1.8rem; 
+    }
+
+    .icon-token-desktop {
+        height: 2rem;
+        width: 1.8rem;
+    }
+    
+    .icon-aboutus-desktop {
+        height: 2rem;
+        width: 1.8rem;
+    }
+    
+    .icon-whitepaper-desktop {
+        height: 2rem;
+        width: 1.8rem;
+    }
+
+    /* === Desktop Header Social Icons Layout/Styles/Format === */
+
+    .social-header-container {
+        /*outline: 2px dashed orangered;*/
+        display: flex;
+        justify-content: end;
+        gap: 0.5rem;
+    }
+
+    .social-icons-header {
+        width: 2.7rem; /* circle size */
+        height: 2.7rem;
+        border-radius: 50%; /* circle */
+        background-color: #1f3140;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.15s ease-out, color 0.15s ease-out;
+    }
+    
+    .social-icons-header:hover .social-icon {
+        color: #102b3d;
+    }
+    
+    .social-icons-header:hover {
+        background-color: #faac18;
+    }
+}

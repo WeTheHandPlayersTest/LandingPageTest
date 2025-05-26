@@ -1,0 +1,273 @@
+/* === Hero Text === */
+
+.hero-text-container {
+    /*outline: 2px dashed blue; /* debug temporary lines */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 3rem;
+    /*white-space: nowrap;*/
+}
+
+@media (min-width: 1024px) {
+    .hero-text-container {
+        text-align: start;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        white-space: nowrap;
+    }
+}
+
+/* === Hero Seedsale === */
+
+.hero-seedsale-container {
+    /*outline: 2px dashed orangered; /* debug temporary lines */
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .hero-seedsale-container {
+        width: auto;
+    }
+}
+
+.seedsale-box-container {
+    /*outline: 2px dashed #0ee0e0; /* debug temporary lines */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: clamp(340px, 100vw, 460px);
+    min-width: 320px;
+    margin: 0 auto;
+    border-radius: 2.5rem;
+    overflow: hidden;
+}
+
+/* === Seedsale Info === */
+
+.seedsale-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 1rem 1.25rem 1rem;
+    white-space: nowrap;
+}
+
+@media (min-width: 480px) {
+    .seedsale-info-container {
+        padding: 1.5rem 2rem 1.25rem 2rem;
+    }
+}
+
+.seedsale-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem; /*nadpis a badge*/
+    margin-bottom: 1.5rem; /*live a actual price*/
+}
+
+@media (min-width: 480px) {
+    .seedsale-title {
+        flex-direction: row;
+        justify-content: space-between; /* ← toto pridaj */
+        align-items: center;
+    }
+
+    .seedsale-text {
+        text-align: left;
+    }
+
+    .badge-live {
+        margin-left: auto; /* v prípade potreby */
+    }
+}
+
+.badge-live {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: rgb(16, 122, 24, 0.5);
+    border-radius: 9999px;
+    padding: 0.8em 1em;
+    gap: 0.5em;
+}
+
+.dot {
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #16f216;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.progress-bar {
+    height: 26px;
+    width: 100%;
+    background-color: #3d3c3b;
+    border-radius: 999px;
+    align-self: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 80%;
+    background-color: #fd5e02;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 3px;
+    border-radius: 999px;
+}
+
+.progress-labels {
+    font-size: 1rem;
+    font-family: 'OmnesMedium', sans-serif;
+    color: #3d3c3b;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.raised-container p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.3rem;
+    margin: 0; /* odstráni extra medzeru */
+}
+
+@media (min-width: 480px) {
+    .raised-container p {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; /* zarovná vertikálne na stred */
+        gap: 0.3rem; /* trochu väčší rozostup pre väčšie displeje */
+    }
+
+    .raised-container .raised1,
+    .raised-container .raised2 {
+        line-height: 1.2; /* zjednotenie výšky riadkov */
+    }
+}
+
+/* === Token Info === */
+
+.token-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.ticker-chain-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .ticker-chain-container {
+        gap: 6rem;
+    }
+}
+
+/* Jednotlivé bloky pre TICKER a CHAIN */
+.token-info-ticker,
+.token-info-chain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em; /* rozostup medzi labelom a value, škáluje sa podľa font-size */
+}
+
+/* Hodnota (napr. $WTHP alebo ikonka + AVAX) */
+.token-info-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+    line-height: 1;
+    min-height: 1.5em; /* zaručí zarovnanie medzi blokmi */
+}
+
+/* SVG wrapper */
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* SVG ikona */
+.chain-icon {
+    width: 1.3em;   /* veľkosť bude závisieť od font-size rodiča */
+    height: 1.3em;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* Text vedľa ikonky */
+.chain-label {
+    line-height: 1;
+}
+
+.contract-address-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.calltoaction-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem 1rem 1rem 1rem;
+}
+
+/* === Decorative Hashtag === */
+.hashtag-bg {
+    position: absolute;
+    top: 20%;
+    left: 66%;
+    width: 121px;
+    height: 118px;
+    background-image: url('../assets/images/wthp-hashtag.svg');
+    background-repeat: no-repeat;
+    z-index: -1;       /* aby bol pod obsahom */
+    pointer-events: none;
+}
+
+/*TESTY*/
+@media (min-width: 1024px) {
+    .hashtag-bg {
+        top: 23%;
+        left: 30%;
+        width: 300px;
+        height: 297px;
+    }
+}

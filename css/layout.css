@@ -1,0 +1,75 @@
+/* === Mobile Version === */
+
+.header-container {
+    /*outline: 2px dashed yellow; /* debug temporary lines */
+    width: 100%;
+    max-width: clamp(360px, 100vw, 1280px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem auto 0 auto;
+    padding: 0 0.5rem;
+}
+
+.hero-container {
+    /*outline: 2px dashed yellow; /* debug temporary lines */
+    width: 100%;
+    max-width: clamp(360px, 100vw, 1280px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    position: relative; /* dôležité pre absolútne pozicované dieťa */
+    z-index: 0; /* alebo 1, podľa vrstvenia */
+}
+
+.handplay-main-container {
+    outline: 2px dashed yellow; /* debug temporary lines */
+    width: 100%;
+    /*max-width: clamp(360px, 100vw, 1280px);*/
+    max-width: clamp(360px, 100vw, 800px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
+
+/* === Tablet LandScape Version +1024px === */
+@media (min-width: 1024px) {
+
+    .header-container {
+        margin: 1rem auto 0 auto;
+        padding: 0 1rem;
+    }
+    
+    .hero-container {
+        flex-direction: row;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+
+    .handplay-main-container {
+        max-width: clamp(1024px, 100vw, 1280px);
+        flex-direction: row;
+        padding: 0rem 0rem;
+        
+    }
+}
+
+/* === Desktop Version === */
+@media (min-width: 1280px) {
+    .header-container {
+        margin-top: 2rem;
+        padding: 0 2rem;
+    }
+
+    .hero-container {
+        /*padding: 0 2rem;*/
+        margin-top: 3rem;
+        padding: 0 2rem;
+    }
+}
