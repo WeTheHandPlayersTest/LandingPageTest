@@ -1,0 +1,54 @@
+/*.handplay-phrase-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.handplay-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.handplay-endingtext-wrapper {
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: block;
+}*/
+
+.handplay-phrase-container p {
+    font-size: 1rem;
+    font-family: 'OmnesSemiBold', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.highlight-ending {
+    font-size: 1.25rem;
+    font-family: 'OmnesBlack', sans-serif;
+    font-weight: 900;
+    color: #fd5e02;
+    line-height: 1.2;
+}
+
+.handplay-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/handplay-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 0;
+    pointer-events: none;
+}

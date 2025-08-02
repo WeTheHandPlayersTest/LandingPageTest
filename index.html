@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WeTheHandPlayers</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <!-- Debug Lines Temporary-->
+        <div class="debug-mobile-line"></div>
+        <div class="debug-tablet-port-line"></div>
+        <div class="debug-tablet-land-line"></div>
+        <div class="debug-desktop-line"></div>
+
+        <!--<div class="debug-max-line"></div> debug temporary -->
+        <!-- WebCode Start -->
+        <!-- Navigation Bar -->
+        <header class="header-container">
+            <div class="navigation-container">
+                <button
+                    class="close-btn"
+                    id="closeMenu" 
+                    aria-label="Close menu"
+                    aria-expanded="false"
+                    aria-controls="navPopupMenu">
+                    <svg class="icon-close-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.43 24.43">
+                        <path d="M14.94,12.22l8.93-8.93A1.93,1.93,0,1,0,21.14.56L12.22,9.49,3.29.56A1.93,1.93,0,0,0,.56,3.29l8.93,8.93L.56,21.14a1.93,1.93,0,1,0,2.73,2.73l8.93-8.93,8.92,8.93a1.93,1.93,0,1,0,2.73-2.73Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <nav class="navigation" aria-label="Main Navigation">
+                    <a href="/" class="logo-navigation">
+                        <img src="assets/images/logo-navigation.svg" alt="WeTheHandPlayers Homepage">
+                    </a>
+                    <ul class="navigation-menu-mobile" id="navPopupMenu">
+                        <li><a href="#" class="nav-menu-items-popup">
+                            <svg class="icon-games-popup">
+                                <use href="#icon-games"></use>
+                            </svg>Games</a>
+                        </li>
+                        <li><a href="#" class="nav-menu-items-popup">
+                            <svg class="icon-token-popup">
+                                <use href="#icon-token"></use>
+                            </svg>Token</a>
+                        </li>
+                        <li><a href="#" class="nav-menu-items-popup">
+                            <svg class="icon-aboutus-popup">
+                                <use href="#icon-aboutus"></use>
+                            </svg>About Us</a>
+                        </li>
+                        <li><a href="#" class="nav-menu-items-popup">
+                            <svg class="icon-whitepaper-popup">
+                                <use href="#icon-whitepaper"></use>
+                            </svg>Whitepaper</a>
+                        </li>
+                    </ul>
+                    <ul class="navigation-menu-desktop">
+                        <li><a href="#" class="nav-menu-items-desktop">
+                            <svg class="icon-games-desktop">
+                                <use href="#icon-games"></use>
+                            </svg>Games</a>
+                        </li>
+                        <li><a href="#" class="nav-menu-items-desktop">
+                            <svg class="icon-token-desktop">
+                                <use href="#icon-token"></use>
+                            </svg>Token</a>
+                        </li>
+                        <li><a href="#" class="nav-menu-items-desktop">
+                            <svg class="icon-aboutus-desktop">
+                                <use href="#icon-aboutus"></use>
+                            </svg>About Us</a>
+                        </li>
+                        <li><a href="#" class="nav-menu-items-desktop">
+                            <svg class="icon-whitepaper-desktop">
+                                <use href="#icon-whitepaper"></use>
+                            </svg>Whitepaper</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-header-container" id="socialSource">
+                    <a href="https://twitter.com/wthp_studio" class="social-icons-header" aria-label="Visit our X (Twitter) profile – Navigation">
+                        <svg class="social-icon icon-x">
+                            <use href="#icon-x"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/wthp.studio/" class="social-icons-header" aria-label="Visit our Instagram profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://discord.gg/j9NSRFs9YQ" class="social-icons-header" aria-label="Visit our Discord profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-discord"></use>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/wthp_studio" class="social-icons-header" aria-label="Visit our Telegram profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-telegram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@wthp.studio" class="social-icons-header" aria-label="Visit our TikTok profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-tiktok"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCF8L3X00yAMF8pioWSoGUmg" class="social-icons-header" aria-label="Visit our Youtube profile – Navigation">
+                        <svg class="social-icon">
+                            <use href="#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="burger-btn"
+                id="btn-burger"
+                aria-label="Toggle menu"
+                aria-expanded="false"
+                aria-controls="navPopupMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        <div class="menu-overlay" id="menuOverlay"></div>
+        <main>
+            <!-- Hero Section -->
+            <section class="hero" aria-label="Hero section">
+                <div class="hero-container">
+                    <div class="hashtag-bg"></div>
+                    <!-- Hero Text -->
+                    <div class="hero-text-container">
+                        <h1 class="hero-headline-container">
+                            <span class="line-group">
+                                <span class="line1">WHETHER YOU</span>
+                                <span class="line2">LIE, SIT, OR STAND</span>
+                            </span>
+                            <span class="line-group2">
+                                <span class="line3">TAKE IT</span>
+                                <span class="line4">IN YOUR HAND!</span>
+                            </span>
+                        </h1>
+                        <h2 class="subheadline visually-centered">
+                            <span class="subheadline-line">In a market flooded with repetition,</span>
+                            <span class="subheadline-line">we craft <span class="subhighlight">original games</span> &mdash;</span>
+                            <span class="subheadline-line">authentic experiences <span class="subhighlight">for anyone, anywhere.</span></span>
+                        </h2>
+                    </div>
+                    <!-- Hero Seedsale -->
+                    <div class="hero-seedsale-container">
+                        <div class="seedsale-box-container">
+                            <!-- Seedsale Info -->
+                            <div class="seedsale-info-container">
+                                <h3 class="seedsale-title">
+                                    <span class="seedsale-text">$WTHP Seedsale</span>
+                                    <span class="badge-live">
+                                        <span class="dot"></span> LIVE
+                                    </span>
+                                </h3>
+                                <p>
+                                    <span class="actual-price1">Actual Price:</span>
+                                    <span class="actual-price2">$0.015</span>
+                                </p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 11.47%;"></div>
+                                </div>
+                                <!--<div class="progress-labels">
+                                    <span>0%</span>
+                                    <span>100%</span>
+                                </div>-->
+                                <div class="raised-container">
+                                    <p>
+                                        <span class="raised1">USD Raised:</span>
+                                        <span class="raised2">$8,611.54 / $75,000</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Token Info -->
+                            <div class="token-info-container">
+                                <div class="ticker-chain-container">
+                                    <div class="token-info-ticker">
+                                        <span class="token-info-label">TICKER</span>
+                                        <div class="token-info-value">$WTHP</div>
+                                    </div>
+                                    <div class="token-info-chain">
+                                        <span class="token-info-label">CHAIN</span>
+                                        <div class="token-info-value">
+                                            <span class="icon-wrapper">
+                                            <svg class="chain-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                                                <path d="M40,20A20,20,0,1,1,20,0,20,20,0,0,1,40,20ZM14.33,28H10.45A3,3,0,0,1,9,27.8,1,1,0,0,1,8.54,27c0-.29.19-.64.59-1.35L18.71,8.79c.41-.72.62-1.08.88-1.21a1,1,0,0,1,.89,0c.26.13.47.49.88,1.21l2,3.44h0a6.55,6.55,0,0,1,.76,1.57,2.89,2.89,0,0,1,0,1.37,6.69,6.69,0,0,1-.77,1.59l-5,8.89,0,0a6.28,6.28,0,0,1-1,1.46,3,3,0,0,1-1.2.7A7.2,7.2,0,0,1,14.33,28Zm9.8,0H29.7a3.14,3.14,0,0,0,1.48-.16,1,1,0,0,0,.44-.78c0-.28-.18-.62-.57-1.29l0-.07L28.23,20.9l0,0c-.4-.67-.59-1-.85-1.13a1,1,0,0,0-.89,0c-.25.13-.46.48-.87,1.18l-2.77,4.77v0c-.41.7-.61,1-.6,1.34a1,1,0,0,0,.45.77A3.07,3.07,0,0,0,24.13,28Z" fill="currentColor" fill-rule="evenodd"/>
+                                            </svg>
+                                            </span>
+                                            <span class="chain-label">AVAX</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contract-address-container">
+                                    <span class="contract-label">CONTRACT ADDRESS</span>
+                                    <p class="contract-value">0x96c70Ff0E8D6D91D8B565Ae4828d518E9e4fBc5e</p>
+                                </div>
+                            </div>
+                            <div class="calltoaction-container">
+                                <h4 class="sr-only">Buy and claim your WTHP tokens!</h4>
+                                <a
+                                href="https://seedsale.wthp.studio/"
+                                class="wallet-btn"
+                                role="button"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Connect Wallet and Buy WTHP Token">
+                                CONNECT WALLET</a>
+                                <div class="vesting-info">
+                                    <span>ONE-YEAR VESTING PERIOD</span>
+                                    <span class="separator">|</span>
+                                    <span>REAL-TIME UNLOCKING</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="games" aria-label="Our Games">
+                <div class="marquee-container">
+                    <div class="marquee-track">
+                        <div class="marquee-content">
+                            <h6 class="marquee-text"><span aria-hidden="true">•</span> BECOME A #HANDPLAYER WITH OUR GAMES</h6>
+                        </div>
+                    </div> 
+                </div>
+                <div class="handplay-main-container">
+                    <div class="handplay-main-text-container">
+                        <div class="handplay-intro-container">
+                            <h2 class="sr-only">HandPlay: The One-Handed Game</h2>
+                            <img src="assets/images/handplay-logo.svg" alt="" aria-hidden="true">
+                            <h3 class="handplay-slogan">
+                                <span class="line1">HOW LONG</span>
+                                <span class="line2">WILL YOU LAST?!</span>
+                            </h3>
+                            <h4 class="hp-main-description">
+                                <span class="main-deshighlight">Pinball-inspired</span> game,<br/> wrapped in an<span class="main-deshighlight"> endless vertical challenge.</span>
+                            </h4>
+                        </div>
+                        <div class="handplay-description-container">
+                            <p class="hp-description block1">
+                                Master your grip and finger control to deliver an outstanding performance with objects of your choice.
+                                Everything relies on your determination and precise hand technique — speed alone won't do the trick.
+                            </p>
+                            <p class="hp-description block2">
+                                Whether you seek relaxation, spending some free time, or you thrive on competition, dive into this captivating game.
+                                Challenge yourself or compare your skills with other #handplayers.
+                                And don't forget — daily practice builds endurance. <span class="deshighlight">SKILL IT!</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="handplay-videomain-container">
+                        <div class="handplay-video-container">
+                            <iframe
+                                src="https://www.youtube.com/embed/ZxcsxW9De-c?si=FhSBlSOaln7-3DsM&vq=hd1080&cc_load_policy=0"
+                                title="HandPlay: Early Access Preview"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="handplay-tag-container">
+                    <div class="tag-line1">
+                        <span class="tag">Fast-Paced</span>
+                        <span class="tag">Skill-Based</span>
+                        <span class="tag">Physics-Based</span>
+                        <span class="tag">Competitive</span>   
+                    </div>
+                    <div class="tag-line2">
+                        <span class="tag">Hypercasual</span>
+                        <span class="tag">One-Handed Control</span>
+                        <span class="tag">Free-to-Play</span>
+                        <span class="tag">Play-to-Earn</span>
+                        <span class="tag">NFTs</span>
+                    </div>
+                </div>
+                <div class="handplay-demo-container">
+                    <a
+                    href="https://handplay.gg/"
+                    class="demo-btn"
+                    role="button"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Try out HandPlay early access"> <!--skontrolovat-->
+                    TRY OUT DEMO</a>
+                    <!--<p class="button-note">(in your browser)</p> <skontrolovat ci s ! alebo bez alebo in alebo at alebo on alebo early access-->
+                </div>
+
+
+                
+
+
+
+
+
+
+
+                    
+                
+
+            
+
+
+
+
+
+
+             
+
+
+
+                <div class="handplay-mockup-container">
+                    
+                    <div class="mockup-wrapper">
+                    <div class="mockup-bg"></div>
+                    <img
+                    src="assets/images/kokocina-optim.png"
+                    alt="HandPlay Gameplay in mockup"
+                    class="hp-mockup"
+                    loading="lazy">  
+                    </div>
+                </div>
+
+
+                   
+                   <div class="coming-soon-container">
+                        <div class="textandstores-wrapper">
+                            <div class="text-wrapper">
+                                <div class="coming-soon-text1">FULL VERSION</div>
+                                <div class="coming-soon-text2">COMING SOON</div>
+                            </div>
+                            <div class="stores-wrapper">
+                                <div class="store-buttons-inner">
+                                <div class="store-button-left">
+                                    <img
+                                    src="assets/images/appstore.svg"
+                                    alt="Available on App Store">
+                                </div>
+                                <div class="store-button-right">
+                                    <img
+                                    src="assets/images/googleplay.svg"
+                                    alt="Available on Google Play">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                   </div>
+                   
+                     <!-- <div class="handplay-about-container">
+                    <div class="about1">
+                        <h5 class="about-first-headline">VARIOUS FLIPPERS</br>& OBJECTS</h5>
+                    </div>
+                </div>-->
+                   
+        <!--<div class="handplay-phrase-container">
+            <div class="handplay-phrase-wrapper">
+                <img src="../assets/images/handplay-bg.svg" alt="" class="handplay-bg" />
+                <div class="handplay-endingtext-wrapper">
+                       <p>
+      Through its creative concept and precise physics,<br>
+      this game will test your abilities<br>
+      while providing pleasure and satisfaction &mdash;<br>
+      whether it&rsquo;s your first or thousandth play.<br>
+      <span class="highlight-ending">And that&rsquo;s the core of HandPlay!</span>
+    </p>
+                </div>
+
+
+            </div>
+        </div>-->
+
+
+<div class="handplay-phrase-wrapper">
+  <div class="handplay-phrase-container">
+    <img src="../assets/images/handplay-bg.svg" alt="" class="handplay-bg" />
+    <p>
+      Through its creative concept and precise physics,<br>
+      this game will test your abilities<br>
+      while providing pleasure and satisfaction &mdash;<br>
+      whether it&rsquo;s your first or thousandth play.<br>
+      <span class="highlight-ending">And that&rsquo;s the core of HandPlay!</span>
+    </p>
+  </div>
+</div>
+  
+            
+
+
+
+            </section>
+
+
+           <section class="token" aria-label="WTHP Token">
+                 <div class="marquee-container">
+                    <div class="marquee-track">
+                        <div class="marquee-content">
+                            <h6 class="marquee-text"><span aria-hidden="true">•</span> TVOJ DEDO</h6>
+                        </div>
+                    </div> 
+                </div>
+
+
+
+
+
+        </main>
+        <!-- Scripts -->
+        <script src="js/main.js" defer></script>
+        <script>
+            fetch('assets/icons/sprite.svg?v=1.0') // ← verzia
+              .then(response => response.text())
+              .then(data => {
+                const div = document.createElement('div');
+                div.style.display = 'none';
+                div.innerHTML = data;
+                document.body.insertBefore(div, document.body.firstChild);
+            });
+        </script>
+    </body>
+</html>

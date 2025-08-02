@@ -1,0 +1,28 @@
+.tag {
+    font-size: 1rem;
+    font-family: 'OmnesSemiBold', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #092437;
+    border-radius: 999px;
+    padding: 0.6em 1em;
+    line-height: 1.1;
+}
+
+.tag-line1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.tag-line2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}

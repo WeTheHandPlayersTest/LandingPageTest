@@ -1,0 +1,105 @@
+.mockup-wrapper {
+    outline: 2px dashed #0ee0e0; /* debug temporary lines */
+    display: flex;
+    width: clamp(234px, 70vw, 600px);
+    margin: 0 auto;
+    position: relative;
+}
+
+.hp-mockup {
+    /*width: clamp(179px, 70vw, 600px);*/
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.mockup-bg {
+    outline: 2px dashed orangered; /* debug temporary lines */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33%;
+    background-image: url('../assets/images/mockup-gradient.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.textandstores-wrapper {
+    outline: 2px dashed red; /* debug temporary lines */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-wrapper {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #011e31;
+    border-radius: 999px;
+    padding: 0.6em 1.75em;
+    white-space: nowrap;
+}
+
+.coming-soon-text1 {
+    font-size: 1.5rem;
+    font-family: 'OmnesBlack', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.coming-soon-text2 {
+    font-size: 1.8125rem;
+    font-family: 'OmnesBlack', sans-serif;
+    font-weight: 900;
+    color: #faac18;
+}
+
+.stores-wrapper {
+    outline: 2px dashed orangered; /* debug temporary lines */
+    display: flex;
+    flex-direction: row;
+    background-color: #092437;
+    border-radius: 20px;
+    padding: 0em 1.5em;
+    padding-top: 3em;
+    padding-bottom: 0.5em;
+    position: absolute;
+    top: 50%; /* ↘️ stred rodiča v osi Y */
+    left: 50%; /* ↔️ stred v osi X */
+    transform: translate(-50%, 0); /* len horizontálne posunutie, žiadne -50% vo vertikále */
+    z-index: -1;
+}
+
+.store-buttons-inner {
+    width: clamp(234px, 70vw, 600px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-button-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.store-button-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.store-button-left img {
+    width: 95%;
+}
+
+.store-button-right img {
+    width: 95%;
+}

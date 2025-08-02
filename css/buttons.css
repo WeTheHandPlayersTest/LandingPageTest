@@ -1,0 +1,103 @@
+/* === PopupMenu Open Button === */
+
+.burger-btn {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 35%;
+    background-color: #011e31;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.15s ease-out;
+}
+      
+.burger-btn:hover {
+    background-color: #fd5e02;
+}
+    
+.burger-btn span {
+    display: block;
+    width: 1.25rem;
+    height: 0.1875rem;
+    background-color: #fd5e02;
+    border-radius: 1rem;
+    margin: 0.125rem 0;
+    transition: 0.15s ease-out;
+}
+    
+.burger-btn:hover span {
+    background-color: #ffffff;
+}
+
+.burger-btn:focus,
+.burger-btn:active {
+    outline: none;
+    box-shadow: none;
+}
+
+/* === PopupMenu Close Button === */
+
+.close-btn {
+    position: absolute;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.icon-close-svg {
+    width: 1rem;
+    height: 1rem;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+/* === Connect Wallet Button === */
+.wallet-btn {
+    /*font-size: 1.25rem;*/
+    font-size: 1.0625rem;
+    font-family: 'MarignyBlack', sans-serif;
+    font-weight: 900;
+    line-height: 1.2;
+    border-radius: 999px;
+    background-color: #fd5e02;
+    color: #ffffff;
+    padding: 0.8em 1em;
+    transition: color 0.15s ease-out;
+    box-shadow: 0 0 0 0.25px #8e8d8d;
+}
+
+.wallet-btn:hover {
+    background-color: #faac18;
+}
+
+/* === Demo Button === */
+.demo-btn {
+    /*font-size: 1.25rem;*/
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.0625rem;
+    font-family: 'MarignyBlack', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    border-radius: 999px;
+    background-color: #fd5e02;
+    color: #ffffff;
+    padding: 0.8em 1em;
+    transition: color 0.15s ease-out;
+    box-shadow: 0 0 0 0.25px #8e8d8d;
+}
+
+.demo-btn:hover {
+    background-color: #faac18;
+}
+
+/*.button-note {
+    font-size: 1rem;
+    font-family: 'OmnesRegular', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}*/
